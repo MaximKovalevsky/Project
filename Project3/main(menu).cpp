@@ -356,12 +356,15 @@ void GameStart()
         if (boolean.stop || boolean.play)
             window.draw(button.start);
         for (int i = 0; i < 4; i++)
+        {
             for (int j = 0; j < 4; j++)
             {
                 game.n = game.grid[i + 1][j + 1];
                 game.s[game.n].setPosition(i * game.w, j * game.w);
                 window.draw(game.s[game.n]);
             }
+        }
+
         for (int i = 0; i < 2; i++)
         {
             window.draw(watch.min[i]);

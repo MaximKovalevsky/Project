@@ -16,8 +16,7 @@ namespace game
 		sf::Text* mainMenu;
 
 		sf::Color menu_text_color = sf::Color::White;      
-		sf::Color chose_text_color = sf::Color(300,100,100);
-		//sf::Color border_color = sf::Color::Black;         
+		sf::Color chose_text_color = sf::Color(300,100,100);        
 
 		
 		void setInitText(sf::Text& text, sf::String str, float xpos, float ypos);
